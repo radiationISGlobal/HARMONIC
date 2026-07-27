@@ -1,0 +1,6 @@
+To execute the function rERR_jf.R:
+
+1. Save the files llhood_linear_v3.c and init.c (as .c) both in the same folder.
+2. Locate where is your R version installed.
+3. Open the folder console where you saved previously llhood_linear_v3.c and init.c and execute (please change your own directoy where R.exe is located) -> "Y:\HARMONIC\R-4.6.1\bin\R.exe" CMD SHLIB llhood_linear_v3.c init.c
+4. Exacute the function rERR_jf.R
