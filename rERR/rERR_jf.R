@@ -4,7 +4,7 @@ library(dplyr)
 
 # If the ID variable contains any characters, update line 53 to use lapply(as.numeric) excluding the ID column.
 
-dyn.load("Y:/llhood_linear_v3.dll")
+dyn.load("Y:/llhood_linear_v3.dll") # location of "llhood_linear_v3.dll"
 
 #///////////////////////////////////////////////////////////////////////////////////////////////
   
