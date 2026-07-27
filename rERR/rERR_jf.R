@@ -2,7 +2,7 @@
 library(stats4)
 library(dplyr)
 
-dyn.load("Y:/InterV-CARDIO/HARMONIC/Analysis/llhood_linear_v3.dll")
+dyn.load("Y:/llhood_linear_v3.dll")
 
 #///////////////////////////////////////////////////////////////////////////////////////////////
   
@@ -48,11 +48,7 @@ f_fit_linERR <- function (formula, data, rsets, n_lin_vars, n_loglin_vars, id_na
     return(-sum(log(res)))
   }
   p.est <- add.arguments(p.est, length(beta))
-  data[, !(names(data) %in% c("Patient_ID_Epi"))] <- lapply(
-    data[, !(names(data) %in% c("Patient_ID_Epi"))],
-    as.numeric
-  )
-  #data <- lapply(data, as.numeric)
+  data <- lapply(data, as.numeric)
   rsets <- lapply(rsets, as.numeric)
   nrseti <- lapply(rsets, length)
   nrseti <- lapply(nrseti, as.numeric)
